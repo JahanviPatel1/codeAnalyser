@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --pixel-bg: #fff0f5; /* Lavender Blush */
+  --pixel-fg: #2d2d2d;
+  --pixel-primary: #ff9aa2; /* Pastel Red */
+  --pixel-secondary: #c7ceea; /* Pastel Purple */
+  --pixel-accent: #b5ead7; /* Pastel Mint */
+  --pixel-border: #4a4a4a;
+  --pixel-shadow: 4px 4px 0px 0px var(--pixel-border);
+  --pixel-font: 'Press Start 2P', cursive;
+  --code-font: 'VT323', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--pixel-font);
+  background-color: var(--pixel-bg);
+  color: var(--pixel-fg);
+  line-height: 1.5;
+  -webkit-font-smoothing: none; /* Sharper pixels */
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+button {
+  font-family: var(--pixel-font);
+  cursor: pointer;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--pixel-bg);
+  border-left: 2px solid var(--pixel-border);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pixel-secondary);
+  border: 2px solid var(--pixel-border);
+  box-shadow: inset -2px -2px 0px rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pixel-primary);
+}

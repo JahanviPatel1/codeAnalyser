@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.github.javaparser:javaparser-core:3.25.7'
+}
+
+application {
+    mainClass = 'com.staticanalyzer.AnalyzerMain'
+}
