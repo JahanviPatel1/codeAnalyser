@@ -14,3 +14,4 @@ void Identifier::accept(ASTVisitor& visitor) { visitor.visit(*this); }
 
 void FunctionDeclaration::accept(ASTVisitor& visitor) { visitor.visit(*this); }
 void Program::accept(ASTVisitor& visitor) { visitor.visit(*this); }
+//tempcomment
